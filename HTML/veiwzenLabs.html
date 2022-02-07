@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="../CSS/viewzenLabsCss.css">
+    <title>VeiwZen Labs</title>
+</head>
+<body>
+    <maincontainer class="main-container">
+        <sidebar>
+            <div id="sidebar-menu" class="sidebar-menu">
+                <img src="../Images/image 1.png" alt="logo" class="logo">
+                <div class="menu-list-container">
+                    <div class="non-active">
+                        <i class="fas fa-home icon"></i>
+                        <a href="#" class="menu-list-item">   
+                            Dashboards
+                        </a>
+                    </div>
+                    
+                    <div class="non-active">
+                        <i class="fas fa-users icon"></i>
+                        <a href="#" class="menu-list-item"> 
+                            User Management
+                        </a>
+                    </div>
+            
+                   
+                    <div class="non-active">
+                        <i class="fas fa-network-wired icon"></i>
+                        <a href="#" class="menu-list-item">
+                            Connector
+                        </a>
+                    </div>
+                    <div class="non-active">
+                        <i class="fas fa-chart-pie icon"></i>
+                        <a href="#" class="menu-list-item">
+                            DataPool
+                        </a>
+                    </div>
+                    <div class="active">
+                        <i class="fas fa-briefcase icon-active"></i>
+                        <a href="#" class="active-menu-list-item">
+                            Pipeline
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </sidebar>
+        <rightcontainer class="reight-container">
+            <nav class="navbar">
+                <div class="profile">
+                    <div>
+                        <h2>Gaurav</h2>
+                        <p>Admin</p>
+                    </div>
+                    <p><img src="../Images/27) Free Style Avatar/Avatar/Image.jpg" alt="avatar" class="avatar"></p> 
+                </div>
+            </nav>
+            <buttoncontainer class="button-container">
+                <button class="button button-1">
+                    <i class="fas fa-check-circle"></i>
+                    Data Preparation
+                </button>
+                <button class="button button-2">
+                    <i class="fas fa-circle"></i>
+                    Data Processing
+                </button>
+                
+                <button class="button button-3">
+                    <i class="far fa-circle active-button-icon"></i>
+                    Data Finalization
+                </button>
+                    
+            
+                
+            </buttoncontainer>
+            <contentcontainer class="content-container">
+                <subsidebar class="subsidebar">
+                    <button class="button add-step">
+                        <i class="fas fa-plus fa-0.5x"></i>
+                        ADD STEP
+                    </button>
+                    <button class="button inactive-step-button">
+                        Data Cleansing
+                        <i class="fas fa-pencil-alt pencil"></i>
+                        <i class="fas fa-trash-alt delete"></i>
+                    </button>
+                    <button class="button inactive-step-button">
+                        Type Conversion
+                        <i class="fas fa-pencil-alt pencil"></i>
+                        <i class="fas fa-trash-alt delete"></i>
+                    </button>
+                    <button class="button active-step-button">
+                        Rejection Step
+                        <i class="fas fa-pencil-alt pencil-active"></i>
+                        <i class="fas fa-trash-alt delete-active"></i>
+                    </button>
+                </subsidebar>
+                <subcontainer class="subcontainer">
+                    <subnavsection class="subnav">
+                        <ul class="subnavmenu">
+                            <li class="submenuitem active-item"> 
+                                <a href="#" class="link">Configuraton</a>
+                            </li>
+                            <li class="submenuitem">
+                                <a href="#" class="link-inactive">Preview upto this step </a></li>
+                            <li class="submenuitem">
+                                <a href="#" class="link-inactive">Notes</a>
+                            </li>
+                        </ul>
+                        <div class="nav-button-container">
+                            <button class="button back-button">
+                                Back
+                            </button>
+                            <button class="button next-button">
+                                next
+                            </button>
+                        </div>
+                    </subnavsection>
+                    <addrulescontainer class="rules-container">
+                        <button class="button rules-button">
+                            ADD RULES
+                        </button>
+                        <button class="button rules-button">
+                            APPLY
+                        </button>
+                    </addrulescontainer>
+                    <formscontainer class="form-container">
+                        <form class="forms">
+                            <header class="header-nav">
+                                <h2 class="header-content">Rejection Rules <i class="fas fa-pencil-alt"></i></h2>
+                                <i class="fas fa-times-circle cross-icon fa-1.5x"></i>
+                            </header>
+                            <inputsection>
+                                <label for="FieldName" class="lable">Field Name</label>
+                                <input type="text" id="FieldName" class="input-field" placeholder="Select a file">
+                            </inputsection>
+                            <filessection>
+                                <ul class="actor-section">
+                                    <li class="list-item-actor">
+                                        <span class="actor">Actor_Id</span>
+                                        <a class="cross">X</a>
+                                    </li>
+                                    <li class="list-item-actor">
+                                        <span class="actor">Actor_Id</span>
+                                        <a class="cross">X</a>
+                                    </li>
+                                    <li class="list-item-actor">
+                                        <span class="actor">Actor_Id</span>
+                                        <a class="cross">X</a>
+                                    </li>
+                                    <li class="list-item-actor">
+                                        <span class="actor">Actor_Id</span>
+                                        <a class="cross">X</a>
+                                    </li>
+                                    <li class="list-item-actor">
+                                        <span class="actor">Actor_Id</span>
+                                        <a class="cross">X</a>
+                                    </li>
+                                    <li class="list-item-actor">
+                                        <span class="actor">Actor_Id</span>
+                                        <a class="cross">X</a>
+                                    </li>
+
+                                </ul>
+                            </filessection>
+                            <inputsection>
+                                <label for="chooseConditions" class="lable">Choose Conditions</label>
+                                <input type="text" id="chooseConditions" class="input-field" placeholder="Choose any condition">
+                            </inputsection>
+                            <inputsection class="small-inputs">
+                                <div >
+                                    <label for="startwith" class="lable">Start with</label>
+                                    <input type="text" id="startwith" class="input-field" >
+                                    <p class="case-sensitive"><span class="case-icon">Aa</span> Not Case sensitive</p>
+                                </div>
+                                <div >
+                                    <label for="startwith" class="lable">Ends with</label>
+                                    <input type="text" id="startwith" class="input-field" >
+                                </div>                                
+                            </inputsection>
+                            <inputsection class="small-inputs">
+                                <div >
+                                    <label for="value" class="lable">Value</label>
+                                    <input type="text" id="value" class="input-field" >
+                                </div>
+                                <div >
+                                    <label for="empty" class="lable"> </label>
+                                    <input type="text" id="empty" class="input-field-empty" >
+                                </div>                                
+                            </inputsection>
+                            <inputsection>
+                                <label for="value" class="lable">Value</label>
+                                <input type="text" id="value" class="input-field">
+                            </inputsection>
+                            <inputsection class="small-inputs">
+                                <div >
+                                    <label for="fromDate" class="lable">From</label>
+                                    <input type="date" id="fromDate" class="input-field" >
+                                </div>
+                                <div >
+                                    <label for="toDate" class="lable">To</label>
+                                    <input type="date" id="toDate" class="input-field" >
+                                </div>                                
+                            </inputsection>
+                            
+                        </form> 
+                        <form class="forms">
+                            <header class="header-nav">
+                                <h2 class="header-content">Rejection Rules <i class="fas fa-pencil-alt"></i></h2>
+                                <i class="fas fa-times-circle cross-icon fa-1.5x"></i>
+                            </header>
+                            <inputsection>
+                                <label for="FieldName" class="lable">Field Name</label>
+                                <select id="FieldName" class="input-field-select" placeholder="Select a file"> 
+                                    <option value="" disabled selected>Select a file</option>    
+                                </select>
+                            </inputsection>
+                            <filessection>
+                                <ul class="actor-section">
+                                    <li class="list-item-actor">
+                                        <span class="actor">Actor_Id</span>
+                                        <a class="cross">X</a>
+                                    </li>
+                                    <li class="list-item-actor">
+                                        <span class="actor">Actor_Id</span>
+                                        <a class="cross">X</a>
+                                    </li>
+                                    <li class="list-item-actor">
+                                        <span class="actor">Actor_Id</span>
+                                        <a class="cross">X</a>
+                                    </li>
+                                    <li class="list-item-actor">
+                                        <span class="actor">Actor_Id</span>
+                                        <a class="cross">X</a>
+                                    </li>
+                                    <li class="list-item-actor">
+                                        <span class="actor">Actor_Id</span>
+                                        <a class="cross">X</a>
+                                    </li>
+                                    <li class="list-item-actor">
+                                        <span class="actor">Actor_Id</span>
+                                        <a class="cross">X</a>
+                                    </li>
+
+                                </ul>
+                            </filessection>
+                            <inputsection>
+                                <label for="chooseConditions" class="lable">Choose Conditions      <span class="span-condition">Reject Records if any condition is satisfied</span></label>
+                                <input type="text" id="chooseConditions" class="input-field" placeholder="Choose any condition">
+                            </inputsection>
+                            <inputsection class="small-inputs">
+                                <div >
+                                    <label for="startwith" class="lable">Start with</label>
+                                    <input type="text" id="startwith" class="input-field" >
+                                    <p class="case-sensitive"><span class="case-icon">Aa</span> Not Case sensitive</p>
+                                </div>
+                                <div >
+                                    <label for="startwith" class="lable">Ends with</label>
+                                    <input type="text" id="startwith" class="input-field" >
+                                </div>                                
+                            </inputsection>
+                            <inputsection class="small-inputs">
+                                <div >
+                                    <label for="value" class="lable">Value</label>
+                                    <input type="text" id="value" class="input-field" >
+                                </div>
+                                <div >
+                                    <label for="empty" class="lable"> </label>
+                                    <input type="text" id="empty" class="input-field-empty" >
+                                </div>                                
+                            </inputsection>
+                            <inputsection>
+                                <label for="value" class="lable">Value</label>
+                                
+                                <select id="value" class="input-field-select" >                                    
+                                </select>
+                            </inputsection>
+                            <inputsection class="small-inputs">
+                                <div >
+                                    <label for="fromDate" class="lable">From</label>
+                                    <input type="date" id="fromDate" class="input-field" >
+                                </div>
+                                <div >
+                                    <label for="toDate" class="lable">To</label>
+                                    <input type="date" id="toDate" class="input-field" >
+                                </div>                                
+                            </inputsection>
+                            
+                        </form>                        
+                    </formscontainer>
+                </subcontainer>
+            </contentcontainer>
+        </rightcontainer>
+    </maincontainer>
+    
+</body>
+</html>
